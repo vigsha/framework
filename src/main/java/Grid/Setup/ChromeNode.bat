@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-3.12.0.jar -role wd -port 5566 -hub http://localhost:4444/grid/register/ -browser browserName=chrome,version=67.0,platform=WINDOWS,maxInstances=5 -maxSession 5

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Lead]">
+  <test name="LeafTaps(failed)">
+    <classes>
+      <class name="testcase.Createlead">
+        <methods>
+          <include name="createLead"/>
+          <include name="closeapp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testcase.Createlead -->
+      <class name="testcase.EditLead">
+        <methods>
+          <include name="editLeads"/>
+          <include name="closeapp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testcase.EditLead -->
+      <class name="testcase.DeleteLead">
+        <methods>
+          <include name="EditLeads"/>
+          <include name="closeapp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testcase.DeleteLead -->
+    </classes>
+  </test> <!-- LeafTaps(failed) -->
+</suite> <!-- Failed suite [Lead] -->
