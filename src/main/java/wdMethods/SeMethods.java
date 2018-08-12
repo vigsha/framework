@@ -72,7 +72,7 @@ public class SeMethods extends Reporters implements WdMethods{
 			}
 		} 
 		catch (NoSuchElementException e) {
-		System.err.println("No such element exception occured");
+		System.err.println("No such element exception");
 		}
 		
 		finally {

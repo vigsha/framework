@@ -28,13 +28,7 @@ public class TC001_CreateLead extends Annotation {
 	    .LastName(lName)
 	    .PhoneNumber(phNumber)
 	    .MailID(email)
-	    .clickSubmit()
-	    .verifyfname(fName);
+	    .clickSubmit();
+	   //.verifyfname(fNameAssert);
 	}
-	
-
-	
-	
-	
-	
 }
