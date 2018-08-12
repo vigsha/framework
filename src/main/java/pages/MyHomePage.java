@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import cucumber.api.java.en.And;
 import wdMethods.Annotation;
 
 public class MyHomePage extends Annotation {
@@ -15,7 +16,6 @@ public class MyHomePage extends Annotation {
 	/*
 	@FindBy(linkText="Leads")
 	WebElement eleLeads;*/
-	
 	public  MyLeads clicklead()
 	{
 		WebElement lead = locateElement("link",prop.getProperty("MyHomePage.leads.link"));

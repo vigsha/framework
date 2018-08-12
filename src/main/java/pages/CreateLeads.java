@@ -35,13 +35,15 @@ public class CreateLeads extends Annotation {
 	@FindBy(className="smallSubmit")
 	WebElement eleSubmit;
 	
+	@FindBy(id="viewLead_firstName_sp")
+	WebElement fNameAssert ;	
+	
 	
 	public CreateLeads CompanyName(String CompanyName)
 	{
 		type(cName,CompanyName);
 		return this;
-	}
-	
+	}	
 	
 	public CreateLeads FirstName(String FirstName)
 	{
@@ -84,9 +86,9 @@ public class CreateLeads extends Annotation {
 		return this;
 	}
 	
-	public CreateLeads verifyfname(String Firstname)
+	public CreateLeads verifyfname(String FirstnameAssert)
 	{
-		verifyExactText(fName, Firstname);
+		verifyExactText(fNameAssert, FirstnameAssert);
 		return this;
 	}
 

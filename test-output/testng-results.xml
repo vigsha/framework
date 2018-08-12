@@ -1,29 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33774" started-at="2018-08-04T10:47:56Z" finished-at="2018-08-04T10:48:30Z">
+  <suite name="Suite" duration-ms="922" started-at="2018-08-11T11:52:52Z" finished-at="2018-08-11T11:52:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="33774" started-at="2018-08-04T10:47:56Z" finished-at="2018-08-04T10:48:30Z">
-      <class name="gridScripts.CrystalCruises">
-        <test-method status="PASS" signature="crystalCruises()[pri:0, instance:gridScripts.CrystalCruises@1fffcd7]" name="crystalCruises" duration-ms="33706" started-at="2018-08-04T10:47:56Z" finished-at="2018-08-04T10:48:30Z">
+    <test name="Test" duration-ms="922" started-at="2018-08-11T11:52:52Z" finished-at="2018-08-11T11:52:53Z">
+      <class name="test.TC001_CreateLead">
+        <test-method status="PASS" signature="startSuite()[pri:0, instance:test.TC001_CreateLead@1753b6d]" name="startSuite" is-config="true" duration-ms="469" started-at="2018-08-11T11:52:52Z" finished-at="2018-08-11T11:52:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crystalCruises -->
-      </class> <!-- gridScripts.CrystalCruises -->
-      <class name="gridScripts.Leaftaps">
-        <test-method status="PASS" signature="login()[pri:0, instance:gridScripts.Leaftaps@18067a5]" name="login" duration-ms="19510" started-at="2018-08-04T10:47:56Z" finished-at="2018-08-04T10:48:16Z">
+        </test-method> <!-- startSuite -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:test.TC001_CreateLead@1753b6d]" name="startTest" is-config="true" duration-ms="0" started-at="2018-08-11T11:52:52Z" finished-at="2018-08-11T11:52:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- gridScripts.Leaftaps -->
-      <class name="gridScripts.JqueryUi">
-        <test-method status="PASS" signature="frame()[pri:0, instance:gridScripts.JqueryUi@1ef45e3]" name="frame" duration-ms="31311" started-at="2018-08-04T10:47:56Z" finished-at="2018-08-04T10:48:28Z">
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="Createlead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TC001_CreateLead@1753b6d]" name="Createlead" duration-ms="890" started-at="2018-08-11T11:52:52Z" data-provider="fetchData" finished-at="2018-08-11T11:52:53Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: Createlead([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) CTS,(java.lang.String) shan,(java.lang.String) laks,(java.lang.String) 9789387757,(java.lang.String) shan@g.com]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: Createlead([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) CTS,(java.lang.String) shan,(java.lang.String) laks,(java.lang.String) 9789387757,(java.lang.String) shan@g.com]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- frame -->
-      </class> <!-- gridScripts.JqueryUi -->
+        </test-method> <!-- Createlead -->
+        <test-method status="PASS" signature="setvalue()[pri:0, instance:test.TC001_CreateLead@1753b6d]" name="setvalue" is-config="true" duration-ms="0" started-at="2018-08-11T11:52:52Z" finished-at="2018-08-11T11:52:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setvalue -->
+      </class> <!-- test.TC001_CreateLead -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
